@@ -16,8 +16,6 @@
 
     #content {
         display: none;
-        width: 100%;
-        height: 100%;
     }
 
     iframe {
@@ -72,13 +70,19 @@
 
     <script type="text/javascript">
         window.onload = function() {
-            var myModal = new bootstrap.Modal(document.getElementById('abc'), {});
+            var myModal = new bootstrap.Modal(document.getElementById('abc'));
             myModal.show();
 
             document.getElementById('loginForm').addEventListener('submit', function(event) {
                 event.preventDefault();  // Prevent form submission
-                myModal.hide();  // Hide the modal
-                document.getElementById('content').style.display = 'block';  // Show the content
+
+                // Hide the modal
+                myModal.hide();
+
+                // Delay to ensure modal is hidden before showing the iframe
+                setTimeout(function() {
+                    document.getElementById('content').style.display = 'block';
+                }, 500);  // Adjust delay if necessary
             });
         };
     </script>
