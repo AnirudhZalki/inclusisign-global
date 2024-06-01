@@ -54,4 +54,32 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-danger btn-lg" data-bs-dismiss="modal
+            <button type="button" class="btn btn-danger btn-lg" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <iframe src="https://tinyurl.com/inclusisignforinclusitybyaz" frameborder="0" id="contentIframe"></iframe>
+
+  <script type="text/javascript">
+    window.onload = function() {
+      var myModal = new bootstrap.Modal(document.getElementById('abc'), {});
+      myModal.show();
+
+      document.getElementById('myForm').addEventListener('submit', function(event) {
+        event.preventDefault();  // Prevent form submission
+
+        // Hide the modal
+        myModal.hide();
+
+        // Show the iframe after a small delay to ensure the modal is fully hidden
+        setTimeout(function() {
+          document.getElementById('contentIframe').style.display = 'block';
+        }, 500);  // Adjust delay if necessary
+      });
+    };
+  </script>
+</body>
+</html>
