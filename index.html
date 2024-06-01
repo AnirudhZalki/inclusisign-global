@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 <title>InclusiSign- to get inclusive society</title>
 <style>
     body, html {
@@ -22,9 +22,8 @@
 </style>
 </head>
 <body>
-
     <div class="container mt-3 p-3">
-        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"  data-bs-target="#abc">Login</button>
+        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#abc">Login</button>
 
         <div class="modal" id="abc">
             <div class="modal-dialog">
@@ -32,8 +31,7 @@
 
                     <div class="modal-header p-3">
                         <h1 class="modal-title text-primary text-center">Login Panel</h1>
-                        <button type="button" class=" btn btn-close"
-                        data-bs-dismiss="modal"></button>
+                        <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
                     </div>
 
                     <div class="modal-body" style="background-image: url(nature.jpg);">
@@ -60,6 +58,15 @@
                     
                 </div>
             </div>
-                <iframe src="https://tinyurl.com/inclusisignforinclusitybyaz" frameborder="0"></iframe>
+        </div>
+    </div>
+    <iframe src="https://tinyurl.com/inclusisignforinclusitybyaz" frameborder="0"></iframe>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var myModal = new bootstrap.Modal(document.getElementById('abc'), {});
+            myModal.show();
+        };
+    </script>
 </body>
 </html>
