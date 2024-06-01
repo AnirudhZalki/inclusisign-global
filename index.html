@@ -28,7 +28,7 @@
 </head>
 <body>
   <div class="container mt-3 p-3">
-    <!-- Button to manually trigger the modal for debugging purposes, hidden by default -->
+    <!-- Hidden button to manually trigger the modal for debugging purposes -->
     <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#abc" style="display:none;">Login</button>
     
     <div class="modal" id="abc">
@@ -65,12 +65,18 @@
 
   <script type="text/javascript">
     window.onload = function() {
+      // Debugging: Log when the window loads
+      console.log("Window loaded, showing modal...");
+      
       var myModal = new bootstrap.Modal(document.getElementById('abc'), {});
       myModal.show();
 
       document.getElementById('myForm').addEventListener('submit', function(event) {
         event.preventDefault();  // Prevent form submission
 
+        // Debugging: Log form submission
+        console.log("Form submitted, hiding modal and showing iframe...");
+        
         // Hide the modal
         myModal.hide();
 
@@ -83,3 +89,4 @@
   </script>
 </body>
 </html>
+
