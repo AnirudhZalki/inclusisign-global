@@ -21,5 +21,42 @@
 </head>
 <body>
     <iframe src="https://tinyurl.com/inclusisignforinclusitybyaz" frameborder="0"></iframe>
+    <div class="container mt-3 p-3">
+        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"  data-bs-target="#abc">Login</button>
+
+        <div class="modal" id="abc">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header p-3">
+                        <h1 class="modal-title text-primary text-center">Login Panel</h1>
+                        <button type="button" class=" btn btn-close"
+                        data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body" style="background-image: url(nature.jpg);">
+                        <form>
+                            <div class="mt-3 mb-3">
+                                <label>Email</label>
+                                <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+                            </div>
+        
+                            <div class="mt-3 mb-3">
+                                <label>Password</label>
+                                <input type="password" name="password" class="form-control" required>
+                            </div>
+
+                            <div class="mt-3 mb-3">
+                                <input type="submit" name="submit" value="submit" class="btn btn-primary btn-lg" style="width:200px;">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                       <button type="button" class="btn btn-danger btn-lg" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    
+                </div>
+            </div>
 </body>
 </html>
